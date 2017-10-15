@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Approval') {
       steps {
-        input 'Você aprova isto para deploy?'
+        input 'VocÃª aprova isto para deploy?'
       }
     }
     stage('Deploy') {
@@ -21,5 +21,8 @@ pipeline {
         sh 'pwd'
       }
     }
+  }
+  environment {
+    MYSQL_USER = 'root'
   }
 }
