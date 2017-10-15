@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t mateusprado/raspstack.org .'
+        sh 'env'
       }
     }
     stage('Tests') {
