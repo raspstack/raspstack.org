@@ -12,5 +12,10 @@ pipeline {
         sh 'pwd'
       }
     }
+    stage('Deploy') {
+      steps {
+        sh 'echo "fazendo o deploy"'
+      }
+    }
   }
 }
