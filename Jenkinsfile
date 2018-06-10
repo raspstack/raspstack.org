@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'echo "iniciando o build"'
-        sh 'ls -l'
+        sh 'docker build -t raspstack.org .'
       }
     }
     stage('Tests') {
