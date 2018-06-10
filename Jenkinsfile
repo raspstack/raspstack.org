@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Tests') {
       steps {
-        sh 'pwd'
+        sh 'docker run -d raspstack.org'
       }
     }
     stage('Aprovação') {
